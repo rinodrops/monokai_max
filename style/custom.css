@@ -1,5 +1,19 @@
+/* code */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: var(--theme-color-orange);
+  border-bottom: 1px solid var(--theme-color-orange);
+  line-height: 1;
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: var(--theme-color-red);
+  border-bottom: 1px solid var(--theme-color-red);
+  line-height: 0.55;
+}
+
+/* output area */
 .jp-OutputArea-child .jp-OutputArea-output {
-  background-color: #19181A;
+  background-color: var(--theme-color-bg-primary);
   border: 1px solid var(--jp-border-color1);
   border-radius: 5px;
   padding: 4px 12px;
@@ -7,14 +21,49 @@
   margin-bottom: 2px;
 }
 
-div.CodeMirror span.CodeMirror-matchingbracket {
-  color: #FC9867;
-  border-bottom: 1px solid #FC9867;
-  line-height: 1;
+/* markdown cell */
+aside.admonition header.admonition-title {
+  color: var(--theme-color-white);
+  font-weight: bold;
 }
 
-div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: #FF6188;
-  border-bottom: 1px solid #FF6188;
-  line-height: 0.55;
+aside.admonition p {
+  color: var(--theme-color-white);
+  padding: 0 8px 0 25px;
+}
+
+div.MathJax_Display {
+  text-align: left !Important;
+  padding-left: 25px;
+}
+
+div.jp-RenderedMarkdown h1, div.jp-RenderedMarkdown h2, div.jp-RenderedMarkdown h3, div.jp-RenderedMarkdown h4, div.jp-RenderedMarkdown h5, div.jp-RenderedMarkdown h6 {
+  color: var(--theme-color-dominant);
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.jp-RenderedMarkdown h1 {
+  font-size: 1.96em;
+}
+
+div.jp-RenderedMarkdown h2 {
+  font-size: 1.69em;
+}
+
+div.jp-RenderedMarkdown h3 {
+  font-size: 1.44em;
+}
+
+div.jp-RenderedMarkdown h4 {
+  font-size: 1.21em;
+}
+
+div.jp-RenderedMarkdown h5 {
+  font-size: 1em;
+}
+
+div.jp-RenderedMarkdown h6 {
+  font-size: 1em;
 }

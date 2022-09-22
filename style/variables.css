@@ -33,6 +33,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
+  --theme-color-dominant: #ffd866;
+  --theme-color-bg-base: #211f22;
+  --theme-color-bg-primary: #19181a;
+  --theme-color-bg-secondary: #2c2a2e;
+  --theme-color-red: #ff6188;
+  --theme-color-orange: #fc9867;
+  --theme-color-yellow: #ffd866;
+  --theme-color-green: #a8dd76;
+  --theme-color-blue: #78dce8;
+  --theme-color-purple: #ac9df2;
+  --theme-color-white: #fcfcfa;
+  --theme-color-gray: #939293;
+  --theme-color-dark: #727172;
+ 
   --jp-shadow-base-lightness: 0;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
@@ -158,7 +172,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: #FFD866;
+  --jp-content-font-color0: var(--theme-color-dominant);
   --jp-content-font-color1: rgba(255, 255, 255, 0.87);
   --jp-content-font-color2: rgba(255, 255, 255, 0.54);
   --jp-content-font-color3: rgba(255, 255, 255, 0.38);
@@ -193,11 +207,11 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #211F22;
-  --jp-layout-color1: #19181A;
-  --jp-layout-color2: #2C2A2E;
-  --jp-layout-color3: #211F22;
-  --jp-layout-color4: #19181A;
+  --jp-layout-color0: var(--theme-color-bg-base);
+  --jp-layout-color1: var(--theme-color-bg-primary);
+  --jp-layout-color2: var(--theme-color-bg-secondary);
+  --jp-layout-color3: var(--theme-color-bg-base);
+  --jp-layout-color4: var(--theme-color-bg-primary);
 
   /* Inverse Layout
    *
@@ -213,10 +227,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
 
-  --jp-brand-color0: #FFD866;
-  --jp-brand-color1: #FFD866;
-  --jp-brand-color2: #FFD866;
-  --jp-brand-color3: #FFD866;
+  --jp-brand-color0: var(--theme-color-dominant);
+  --jp-brand-color1: var(--theme-color-dominant);
+  --jp-brand-color2: var(--theme-color-dominant);
+  --jp-brand-color3: var(--theme-color-dominant);
 
   --jp-accent-color0: var(--md-green-700);
   --jp-accent-color1: var(--md-green-500);
@@ -339,30 +353,30 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #FF6188;/*#78DCE8*/
-  --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #AC9DF2;
-  --jp-mirror-editor-def-color: #A8DD76;
-  --jp-mirror-editor-variable-color: #FCFCFA;
-  --jp-mirror-editor-variable-2-color: #939293;
-  --jp-mirror-editor-variable-3-color: #FC9867;
-  --jp-mirror-editor-punctuation-color: #939293;
-  --jp-mirror-editor-property-color: #A8DD76;
-  --jp-mirror-editor-operator-color: #FF6188;
-  --jp-mirror-editor-comment-color: #727072;
-  --jp-mirror-editor-string-color: #FFD866;
-  --jp-mirror-editor-string-2-color: #708;
-  --jp-mirror-editor-meta-color: #a2f;
-  --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: #A8DD76;
-  --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: #FF6188;
-  --jp-mirror-editor-attribute-color: #78DCE8;
-  --jp-mirror-editor-header-color: #FFD866;
-  --jp-mirror-editor-quote-color: #A8DD76;
-  --jp-mirror-editor-link-color: #FFD866;
-  --jp-mirror-editor-error-color: #FF6188;
-  --jp-mirror-editor-hr-color: #999;
+  --jp-mirror-editor-keyword-color: var(--theme-color-red);
+  --jp-mirror-editor-atom-color: var(--theme-color-purple);
+  --jp-mirror-editor-number-color: var(--theme-color-purple);
+  --jp-mirror-editor-def-color: var(--theme-color-green);
+  --jp-mirror-editor-variable-color: var(--theme-color-white);
+  --jp-mirror-editor-variable-2-color: var(--theme-color-gray);
+  --jp-mirror-editor-variable-3-color: var(--theme-color-orange);
+  --jp-mirror-editor-punctuation-color: var(--theme-color-gray);
+  --jp-mirror-editor-property-color: var(--theme-color-green);
+  --jp-mirror-editor-operator-color: var(--theme-color-red);
+  --jp-mirror-editor-comment-color: var(--theme-color-dark);
+  --jp-mirror-editor-string-color: var(--theme-color-dominant);
+  --jp-mirror-editor-string-2-color: var(--theme-color-dominant);
+  --jp-mirror-editor-meta-color: var(--theme-color-red);
+  --jp-mirror-editor-qualifier-color: var(--theme-color-dark);
+  --jp-mirror-editor-builtin-color: var(--theme-color-green);
+  --jp-mirror-editor-bracket-color: var(--theme-color-gray);
+  --jp-mirror-editor-tag-color: var(--theme-color-red);
+  --jp-mirror-editor-attribute-color: var(--theme-color-blue);
+  --jp-mirror-editor-header-color: var(--theme-color-dominant);
+  --jp-mirror-editor-quote-color: var(--theme-color-green);
+  --jp-mirror-editor-link-color: var(--theme-color-dominant);
+  --jp-mirror-editor-error-color: var(--theme-color-red);
+  --jp-mirror-editor-hr-color: var(--theme-color-gray);
 
   /* Vega extension styles */
 
