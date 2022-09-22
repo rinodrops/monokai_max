@@ -2,6 +2,8 @@
 
 A JupyterLab theme.
 
+![Screenshot](screenshot.png)
+
 ## Requirements
 
 - JupyterLab >= 3.0
@@ -11,7 +13,7 @@ A JupyterLab theme.
 To install the extension, execute:
 
 ```bash
-pip install monokai_max
+pip install dist/monokai_max-0.1.0-py3-none-any.whl
 ```
 
 ## Uninstall
