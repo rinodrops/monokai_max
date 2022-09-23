@@ -27,9 +27,9 @@ aside.admonition header.admonition-title {
   font-weight: bold;
 }
 
-aside.admonition p {
+aside.admonition *:not(header) {
   color: var(--theme-color-white);
-  padding: 0 8px 0 25px;
+  margin-left: 25px;
 }
 
 div.MathJax_Display {
